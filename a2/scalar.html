@@ -1,0 +1,217 @@
+<h1>---
+</h1>For this assignment we had to compare between corpora formed from excerpts of the Santa Barbara Corpus of Spoken American English, as well as fictional and news related content from the Corpus of Contemporary American English. We hypothesize, that the Santa Barbara corpus, will be much more informal, and contain more syntactically incorrect phrases. The following are some of our observations:
+<h2>1. The sizes varied amongst corpora:
+</h2>
+<table>
+  <tbody>
+    <tr style="padding-left: 2em">
+      <th style="padding-right: 2em">Fiction
+      </th>
+      <th style="padding-right: 2em">News
+      </th>
+      <th>Santa Barbara
+      </th>
+    </tr>
+    <tr style="padding-left: 2em">
+      <td style="padding-right: 2em">967073
+      </td>
+      <td style="padding-right: 2em">879580
+      </td>
+      <td>351201
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />---&gt; Because the length of the excerpts and the tokens used differ
+<h2>
+  <br />2. The Santa Barbara corpus tokenizes pauses as &quot;...&quot; and &quot;--&quot;
+</h2>
+<style type="text/css">li {
+  <br />  <br />  list-style:none;
+  <br />  <br />  float:left;
+  <br />  <br />  padding: 5px 10px;
+  <br />  <br />  border: 1px solid #eee;
+  <br />  <br />  }
+</style> Output for: <b> 
+  <code> print_ngram_freq_list(unigrams, top=25, pattern=None) 
+  </code> </b>
+<ul><li>29297 ,</li><li>25444 ...</li><li>22374 .</li><li>9523 I</li><li>7720 the</li><li>5677 &#39;s</li><li>5638 you</li><li>5451 and</li><li>5121 it</li><li>4971 that</li><li>4767 --</li><li>4747 to</li><li>4610 a</li><li>3672 ?</li><li>3223 of</li><li>3194 n&#39;t</li><li>2953 was</li><li>2754 in</li><li>2590 know</li><li>2460 do</li><li>2368 he</li><li>2352 And</li><li>2239 they</li><li>2222 is</li><li>2112 like</li>
+</ul>
+<br />
+<br />
+<br />
+<br />&nbsp;
+<h4>---&gt; In order for the corpora to represent pauses in time in the recordings
+</h4>
+<h2>
+  <br />3. All Corpora are in the English Language
+</h2>&nbsp;
+<h2>4. <strong>BUT&nbsp;</strong>surprisingly the&nbsp;<a href="https://corpus.byu.edu/coca/">Corpus of Contemporary American English</a>&nbsp;contained British spelling
+</h2>
+<h4>For example, the fiction and news corpora contained <strong>colour, honour, and centre</strong>&nbsp;tokens.
+</h4> -----&gt; Might be quoting scripts from foreign movies
+<h2>
+  <br />5. The&nbsp;<a href="https://corpus.byu.edu/coca/">Corpus of Contemporary American English</a>&nbsp;contained digit tokens [0-9], but the&nbsp;<a href="http://www.linguistics.ucsb.edu/research/santa-barbara-corpus">Santa Barbara Corpus of Spoken American English</a>&nbsp;contained string representations for integers.
+</h2>
+<h4>
+  <br />----&gt; Likely due to human or computer agent&#39;s choice when creating the corpora
+</h4>
+<h2>
+  <br />6. Unigrams: Mostly Pronouns and Contractions
+  <br />&nbsp;
+</h2>Output for: <b> 
+  <code> print_ngram_freq_list(unigrams, top = 25, pattern = None) 
+  </code></b>
+<br />
+<br /><strong>Fiction</strong>
+<ul><li>57168 .</li><li>49565 ,</li><li>38599 the</li><li>32364 ``</li><li>19671 to</li><li>18963 and</li><li>17884 a</li><li>15407 of</li><li>15236 I</li><li>10702 was</li><li>10554 in</li><li>8505 her</li><li>7701 &#39;s</li><li>7655 that</li><li>7491 it</li><li>6917 his</li><li>6807 he</li><li>6532 you</li><li>6209 had</li><li>6128 ?</li><li>6106 n&#39;t</li><li>5948 she</li><li>5696 on</li><li>5523 with</li><li>5128 for</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>News</strong>
+<ul><li>42329 ,</li><li>38005 the</li><li>37541 .</li><li>19862 to</li><li>18878 of</li><li>18163 and</li><li>17742 a</li><li>16665 ``</li><li>14943 in</li><li>9086 &#39;s</li><li>7699 that</li><li>7430 for</li><li>6030 was</li><li>5923 on</li><li>5777 is</li><li>5695 said</li><li>5399 The</li><li>5324 with</li><li>4705 at</li><li>4343 he</li><li>4018 as</li><li>4015 it</li><li>3513 his</li><li>3501 I</li><li>3216 from</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>Speech</strong>
+<ul><li>57168 .</li><li>49565 ,</li><li>38599 the</li><li>32364 ``</li><li>19671 to</li><li>18963 and</li><li>17884 a</li><li>15407 of</li><li>15236 I</li><li>10702 was</li><li>10554 in</li><li>8505 her</li><li>7701 &#39;s</li><li>7655 that</li><li>7491 it</li><li>6917 his</li><li>6807 he</li><li>6532 you</li><li>6209 had</li><li>6128 ?</li><li>6106 n&#39;t</li><li>5948 she</li><li>5696 on</li><li>5523 with</li><li>5128 for</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />----&gt; Likely due to syntactic rules of the English language, enforcing high frequency of usage of the POSs.
+<h2>
+  <br />7. Trigrams:&nbsp;<a href="https://corpus.byu.edu/coca/">Corpus of Contemporary American English</a>&nbsp;quotations tend to start with a subject pronoun;&nbsp;<a href="http://www.linguistics.ucsb.edu/research/santa-barbara-corpus">Santa Barbara Corpus of Spoken American English</a>&nbsp;shows human tendency to use filler words
+</h2>
+<br />Output for: <b> 
+  <code> print_ngram_freq_list(trigrams, top = 25, pattern = None) 
+  </code></b>
+<br />&nbsp;
+<br />
+<br /><strong>Fiction</strong>
+<ul><li>2413 . `` ``</li><li>1686 . `` I</li><li>1286 ? `` ``</li><li>739 said . ``</li><li>656 . It was</li><li>618 . `` You</li><li>597 . `` He</li><li>566 I do n&#39;t</li><li>562 , `` I</li><li>548 `` `` I</li><li>506 , `` he</li><li>499 , `` she</li><li>490 . `` The</li><li>458 . `` She</li><li>441 . `` It</li><li>362 , and I</li><li>354 , and the</li><li>354 . It &#39;s</li><li>348 `` I &#39;m</li><li>334 `` he said</li><li>328 . He was</li><li>318 `` she said</li><li>316 said , ``</li><li>305 it . ``</li><li>301 . `` What</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>News</strong>
+<ul><li>975 said . ``</li><li>764 . `` I</li><li>673 . `` The</li><li>513 , `` he</li><li>489 . `` It</li><li>484 , `` said</li><li>456 . `` We</li><li>446 , according to</li><li>422 `` he said</li><li>421 he said .</li><li>341 . It &#39;s</li><li>289 `` It &#39;s</li><li>286 one of the</li><li>264 . `` He</li><li>233 , and the</li><li>214 , `` she</li><li>198 . `` ``</li><li>197 as well as</li><li>186 said . The</li><li>186 a lot of</li><li>183 &amp; amp ;</li><li>183 . If you</li><li>174 . It was</li><li>174 , `` the</li><li>171 `` she said</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>Speech</strong>
+<ul><li>766 I do n&#39;t</li><li>704 , ... and</li><li>704 , ... I</li><li>682 you know ,</li><li>521 uh , ...</li><li>425 , you know</li><li>417 . Yeah .</li><li>407 do n&#39;t know</li><li>405 , ... you</li><li>391 ... Yeah .</li><li>362 um , ...</li><li>323 ... you know</li><li>322 . You know</li><li>310 . That &#39;s</li><li>290 . ... I</li><li>289 , and I</li><li>282 and , ...</li><li>277 . It &#39;s</li><li>274 , it &#39;s</li><li>271 You know ,</li><li>266 , ... that</li><li>245 ... I do</li><li>238 , ... uh</li><li>236 . ... Oh</li><li>234 I mean ,</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />&nbsp;
+<h2>
+  <br />8. Quadrigrams:&nbsp;<a href="https://corpus.byu.edu/coca/">Corpus of Contemporary American English</a>&nbsp;subject pronoun-verb pattern, people tend to talk about other people;&nbsp;<a href="http://www.linguistics.ucsb.edu/research/santa-barbara-corpus">Santa Barbara Corpus of Spoken American English</a>&nbsp;A lot of &quot;thinking&quot; and &quot;knowing,&quot;&nbsp; &nbsp; &nbsp; <b>P(know | you) = 0.75</b>&nbsp;
+</h2>
+<br />Output for: <b> 
+  <code> print_ngram_freq_list(quadrigrams, top = 25, pattern = None) 
+  </code></b>
+<br />
+<br />
+<br /><strong>Fiction</strong>
+<ul><li>306 , `` he said</li><li>301 . `` `` I</li><li>298 , `` she said</li><li>259 , `` I said</li><li>232 . `` I &#39;m</li><li>223 `` I do n&#39;t</li><li>198 . `` It &#39;s</li><li>170 I do n&#39;t know</li><li>169 `` he said .</li><li>165 ? `` `` I</li><li>152 `` I said .</li><li>143 `` she said .</li><li>137 . `` I do</li><li>135 . `` `` You</li><li>133 said . `` I</li><li>130 . I do n&#39;t</li><li>117 he said . ``</li><li>117 I said . ``</li><li>117 H &amp; eacute ;</li><li>113 &amp; eacute ; loise</li><li>106 `` she said ,</li><li>100 she said . ``</li><li>98 . `` You &#39;re</li><li>97 `` he said ,</li><li>96 . `` `` What</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>News</strong>
+<ul><li>412 , `` he said</li><li>339 `` he said .</li><li>259 . `` It &#39;s</li><li>215 he said . ``</li><li>169 , `` she said</li><li>150 , according to the</li><li>138 said . `` I</li><li>133 , as well as</li><li>132 `` she said .</li><li>101 . ( Photo :</li><li>99 said . `` We</li><li>94 said . `` It</li><li>92 . `` I think</li><li>89 . `` I &#39;m</li><li>87 she said . ``</li><li>77 . `` It was</li><li>77 said in a statement</li><li>75 , he said .</li><li>71 . `` This is</li><li>71 . Maggie Haberman Reporter</li><li>68 at the end of</li><li>68 posts appear here ,</li><li>68 here , as well</li><li>68 as posts by staff</li><li>68 posts by staff writers</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>Speech</strong>
+<ul><li>363 I do n&#39;t know</li><li>289 , you know ,</li><li>267 , ... you know</li><li>236 ... I do n&#39;t</li><li>232 ... you know ,</li><li>179 , ... uh ,</li><li>157 , I do n&#39;t</li><li>155 I &#39;m gon na</li><li>152 . You know ,</li><li>137 , ... um ,</li><li>130 . I do n&#39;t</li><li>127 you know , ...</li><li>127 ... uh , ...</li><li>116 ... um , ...</li><li>107 . ... Yeah .</li><li>101 do n&#39;t know .</li><li>98 , and , ...</li><li>97 ... Yeah . ...</li><li>91 , ... I do</li><li>91 ? ... Yeah .</li><li>89 , ... it &#39;s</li><li>85 . Um , ...</li><li>85 I do n&#39;t think</li><li>84 , ... and then</li><li>79 ... You know ,</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />&nbsp;
+<h4>&nbsp;
+</h4>
+<h2>
+  <br />9. Pentagrams: Fiction <strong>P(know | n&#39;t) = 1&nbsp;</strong>and Speech <strong>P(know | n&#39;t) = 0.7&nbsp;</strong>for corpora; News Corpus output suggests relations between many tokens composing&nbsp;the pentagram
+</h2>
+<br />Output for: <b> 
+  <code> print_ngram_freq_list(pentagrams, top = 25, pattern = None) 
+  </code></b>
+<br />
+<br /><strong>Fiction</strong>
+<ul><li>155 , `` he said .</li><li>143 , `` I said .</li><li>135 , `` she said .</li><li>122 . `` I do n&#39;t</li><li>114 `` he said . ``</li><li>114 `` I said . ``</li><li>113 H &amp; eacute ; loise</li><li>102 , `` she said ,</li><li>100 `` she said . ``</li><li>86 , `` he said ,</li><li>78 , `` I said ,</li><li>77 `` I do n&#39;t know</li><li>74 `` `` I do n&#39;t</li><li>53 shook his head . ``</li><li>48 . `` `` That &#39;s</li><li>47 . `` `` I &#39;m</li><li>47 . I do n&#39;t know</li><li>47 . `` I ca n&#39;t</li><li>46 . `` `` It &#39;s</li><li>40 . `` I did n&#39;t</li><li>39 . `` `` Well ,</li><li>39 I do n&#39;t know .</li><li>37 ? `` `` Yes ,</li><li>37 ? `` `` No ,</li><li>36 . `` `` I do</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>News</strong>
+<ul><li>330 , `` he said .</li><li>191 `` he said . ``</li><li>130 , `` she said .</li><li>80 `` she said . ``</li><li>68 as posts by staff writers</li><li>68 posts by staff writers .</li><li>67 relevant are displayed in Top</li><li>67 posts appear here , as</li><li>67 appear here , as well</li><li>67 here , as well as</li><li>67 , as well as posts</li><li>67 as well as posts by</li><li>67 well as posts by staff</li><li>66 particularly useful or relevant are</li><li>66 useful or relevant are displayed</li><li>66 or relevant are displayed in</li><li>66 are displayed in Top Comments</li><li>66 Top Comments , as are</li><li>66 Replies to those posts appear</li><li>66 to those posts appear here</li><li>66 those posts appear here ,</li><li>65 Comments our editors find particularly</li><li>65 our editors find particularly useful</li><li>65 editors find particularly useful or</li><li>65 find particularly useful or relevant</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><strong>Speech</strong>
+<ul><li>196 , ... you know ,</li><li>141 ... I do n&#39;t know</li><li>111 , ... uh , ...</li><li>100 , ... um , ...</li><li>98 I do n&#39;t know .</li><li>87 , ... I do n&#39;t</li><li>74 , I do n&#39;t know</li><li>69 . I do n&#39;t know</li><li>67 I do n&#39;t know ,</li><li>63 ... you know , ...</li><li>59 . ... I do n&#39;t</li><li>49 I do n&#39;t know if</li><li>48 , ... and , ...</li><li>39 I do n&#39;t know what</li><li>35 , you know , ...</li><li>33 . ... Um , ...</li><li>33 ... I &#39;m gon na</li><li>32 . That &#39;s right .</li><li>30 . ... Yeah . ...</li><li>30 I &#39;m not gon na</li><li>29 ? ... Yeah . ...</li><li>28 , I &#39;m gon na</li><li>28 ... I do n&#39;t think</li><li>27 I do n&#39;t know how</li><li>25 ? ... I do n&#39;t</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />Sample News Data suggesting relations:&nbsp;
+<br />&quot;Top Comments&quot;
+<br />&quot;those posts appear here&quot;
+<br />&quot;editors find particularly useful&quot;
+<br />
+<br />----&gt; Highly frequent n-grams in context-specific environment
+<br />&nbsp;
+<h2>10. The&nbsp;<a href="http://www.linguistics.ucsb.edu/research/santa-barbara-corpus">Santa Barbara Corpus of Spoken American English</a>&nbsp;portrays humans&#39; preference for contractions
+</h2>
