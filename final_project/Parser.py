@@ -24,7 +24,7 @@ class Parser(object):
         ''' returns all unique tokens in email body '''
         subj = set()
         body = set()
-        with open(_file) as fil:
+        with open(_file, encoding='utf-8', errors='ignore') as fil:
             for line in fil.readlines():
                 if line[:8].lower() == "subject:":
                     subj = set(word_tokenize(line[9:]))
