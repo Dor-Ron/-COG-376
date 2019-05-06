@@ -1,6 +1,6 @@
 '''
 Author: Dor Rondel
-File: Parse.py
+File: Parser.py
 Program: Naive Bayes Classifier for E-mail Spam Detection
 Course: Computational Models of Language Models (COG-376)
 Instructor: Prof. Daniel Schlegel
@@ -24,17 +24,12 @@ class Parser(object):
         ''' returns all unique tokens in email body '''
         subj = set()
         body = set()
-        with open(_file, encoding='utf-8', errors='ignore') as fil:
+        with open(_file, encoding = 'utf-8', errors = 'ignore') as fil:
             for line in fil.readlines():
                 if line[:8].lower() == "subject:":
-                    subj = set(word_tokenize(line[9:]))
+                    subj = set([word.lower() for word in word_tokenize(line[9:]) if word not in stop_words])
                 else:
-                    tmp = word_tokenize(line)
-                    tmp2 = set()
-                    for token in tmp:
-                        if token not in stop_words:
-                            tmp2.add(token)
-                    body = set(list(body) + list(tmp2))
+                    body = set([word.lower() for word in word_tokenize(line) if word not in stop_words])
         self.subject_tokens = subj
         self.body_tokens = body
         

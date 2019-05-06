@@ -7,16 +7,11 @@ Instructor: Prof. Daniel Schlegel
 Institution: SUNY Oswego
 '''
 
-# Imports
+from Classifier import Classifier
 
-
-# Parsing Data
-
-
-# Training model
-
-
-# Testing model
-
-
-# Reporting Results
+if __name__ == "__main__":
+    print("Building model")
+    print("Training model on emails under ./train/*")
+    bayes = Classifier()
+    print("Testing model on emails under ./test/*")
+    print(bayes.test_model())
